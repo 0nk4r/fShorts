@@ -1,0 +1,21 @@
+// I Love You Cherry <3 , I plan something some pretty for 5th aniversary
+{
+    "manifest_version": 3,
+    "name": "FShorts: F YouTube Shorts Addiction, Get the work done",
+    "version": "1.0",
+    "description": "Block YouTube Shorts and redirect to custom URLs",
+    "permissions": ["storage", "webNavigation", "tabs", "scripting"],
+    "host_permissions": ["*://*.youtube.com/*"],
+    "action": {
+      "default_popup": "popup.html"
+    },
+    "background": {
+      "service_worker": "background.js"
+    },
+    "content_scripts": [
+      {
+        "matches": ["*://*.youtube.com/*"],
+        "js": ["content.js"]
+      }
+    ]
+  }
