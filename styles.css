@@ -1,0 +1,9 @@
+.extension-disabled ytd-reel-shelf-renderer,
+.extension-disabled [is-shorts] {
+  display: initial !important;
+}
+
+ytd-reel-shelf-renderer,
+[is-shorts] {
+  display: none !important;
+}
